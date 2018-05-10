@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
+
+    <title>Checkout | Doremi Music Indonesia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <a href="index.html" class="navbar-brand" style="padding-left: 40px;" href="#">DOREMI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+              </form>
+          </div>
+      </nav>
+
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Alamat Pengirimian</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nama Depan</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Nama depan harus diisi.
+                  </div>
+              </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Nama Belakang</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email <span class="text-muted"></span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">
+                  Masukan alamat email Anda.
+                </div>
+              </div>
+
+            <div class="mb-3">
+              <label for="email">No Handphone <span class="text-muted"></span></label>
+              <input type="phone" class="form-control" id="phone" placeholder="0888889988" required>
+              <div class="invalid-feedback">
+                Masukan No Handphone Anda.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Alamat 1</label>
+              <textarea class="form-control" rows="2" id="address" placeholder="Alamat" required></textarea>
+              <div class="invalid-feedback">
+                Masukan Alamat Anda.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="country">Negara</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Pilih Negara</option>
+                  <option>Indonesia</option>
+                </select>
+                <div class="invalid-feedback">
+                  Pilih Negara Anda.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Provinsi</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Pilih Provinsi</option>
+                  <option>Banten</option>
+                </select>
+                <div class="invalid-feedback">
+                  Masukan Provinsi Anda.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Kota</label>
+                <select class="custom-select d-block w-100" id="city" required>
+                  <option value="">Pilih Kota</option>
+                  <option>Tangerang</option>
+                </select>
+                <div class="invalid-feedback">
+                  Masukan Provinsi Anda.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Kode Pos</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+
+            <!-- TAMBHAN BAGIAN I -->
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save" data-toggle="collapse" href="#shipping_address" role="button" aria-expanded="false" aria-controls="alama">
+              <label class="custom-control-label" for="save">Kirim Ke Alamat Berbeda</label>
+            </div>
+            <hr class="mb-4">
+
+            <!--TAMBAHAN BAGIAN II-->
+            <div class="collapse" id="shipping_address">
+                  <form class="needs-validation" novalidate>
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="firstName">Nama Depan</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Nama depan harus diisi.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="lastName">Nama Belakang</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="" value="">
+                        </div>
+                      </div>
+
+                          <div class="mb-3">
+                            <label for="email">Email <span class="text-muted"></span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                              <div class="invalid-feedback">
+                                Masukan alamat email Anda.
+                              </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="email">No Handphone <span class="text-muted"></span></label>
+                            <input type="phone" class="form-control" id="phone" placeholder="0888889988" required>
+                            <div class="invalid-feedback">
+                              Masukan No Handphone Anda.
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="address">Alamat 1</label>
+                            <textarea class="form-control" rows="2" id="address" placeholder="Alamat" required></textarea>
+                            <div class="invalid-feedback">
+                              Masukan Alamat Anda.
+                            </div>
+                          </div>
+                    
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="country">Negara</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                          <option value="">Pilih Negara</option>
+                          <option>Indonesia</option>
+                        </select>
+                        <div class="invalid-feedback">
+                         Pilih Negara Anda.
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="state">Provinsi</label>
+                        <select class="custom-select d-block w-100" id="state" required>
+                          <option value="">Pilih Provinsi</option>
+                          <option>Banten</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Masukan Provinsi Anda.
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="state">Kota</label>
+                        <select class="custom-select d-block w-100" id="city" required>
+                          <option value="">Pilih Kota</option>
+                          <option>Tangerang</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Masukan Provinsi Anda.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="zip">Kode Pos</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Zip code required.
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+
+            <!-- Metode Pengiriman-->
+
+            <div class="d-block my-4">
+               <h4 class="mb-3">Metode Pengiriman</h4>
+                <div class="col-md-4 mb-3">
+                  <select class="custom-select d-block w-100" id="state" required>
+                    <option value="">Pilih Metode Pengiriman</option>
+                    <option>JNE</option>
+                    <option>REX</option>
+                    <option>WAHANA</option>
+                  </select> 
+                <div class="invalid-feedback">
+                  Pilih Metode Pembayaran.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <select class="custom-select d-block w-100" id="state" required>
+                    <option value="">Pilih Metode Pengiriman</option>
+                    <option>JNE</option>
+                    <option>REX</option>
+                    <option>WAHANA</option>
+                  </select> 
+                <div class="invalid-feedback">
+                  Pilih Metode Pembayaran.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4"> 
+            <button class="btn btn-primary btn-md btn-block" type="submit">Lanjut Ke Pembayaran</button>
+          </form>
+        </div>
+
+        <!-- RINGKASAN PEMESANAN -->
+        <div class="col-md-4 order-md-2 mb-4">
+            <h6 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Ringkasan Pemesanan</span>
+            </h6>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Total Pemesanan</h6>
+                  <small class="text-muted">Deskripsi</small>
+                </div>
+                <span class="text-muted">RP 500.000</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Biaya Pengiriman</h6>
+                  <small class="text-muted">JNE YES</small>
+                </div>
+                <span class="text-muted">RP 50.000</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-primary">
+                  <h6 class="my-0">Kode Kupon</h6>
+                  <small>DoremiMusic18</small>
+                </div>
+                <span class="text-primary">- RP 50.000</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                    <h6 class="my-0">Total Transaksi</h6>
+                    <small class="text-muted">Deskripsi</small>
+                </div>
+                    <span class="text-muted"><strong>RP 300.000</strong></span>
+              </li> 
+            </ul>
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Kode Kupon">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">Gunakan</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>  
+      <!-- FOOTER -->
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1"></p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Back To Top-->
+    <script>
+     
+    jQuery(document).ready(function() {
+     
+    var offset = 250;
+     
+    var duration = 300;
+     
+    jQuery(window).scroll(function() {
+     
+    if (jQuery(this).scrollTop() > offset) {
+     
+    jQuery('.back-to-top').fadeIn(duration);
+     
+    } else {
+     
+    jQuery('.back-to-top').fadeOut(duration);
+     
+    }
+    });
+     
+     
+     
+    jQuery('.back-to-top').click(function(event) {
+     
+    event.preventDefault();
+     
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+     
+    return false;
+     
+    })
+     
+    });
+     
+    </script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
